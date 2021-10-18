@@ -1,0 +1,160 @@
+/* Base style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: bloсk;
+}
+
+a {
+    color: #EC407A;
+}
+
+a:hover {
+    color: #E91E63;
+}
+
+button {
+    display: block;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s background-color;
+}
+
+button:disabled {
+    background-color: #CFD8DC;
+}
+
+button:disabled:hover {
+    background-color: #CFD8DC;
+}
+
+main {
+    max-width: 1400px;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 50px auto;
+}
+
+/* Action style */
+.action {
+    background-color: #66BB6A;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.action:hover {
+    background-color: #4CAF50;
+}
+
+/* Images style */
+.content {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    column-count: 4;
+    column-gap: 5px;
+    min-height: 400px;
+}
+
+a {
+    display: inline-block;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100px;
+}
+
+a:nth-child(n) {
+    background-color: #EFEBE9;
+}
+
+a:nth-child(2n) {
+    background-color: #D7CCC8;
+}
+
+a:nth-child(3n) {
+    background-color: #BCAAA4;
+}
+
+/* Popup style */
+.popup .content {
+    text-align: right;
+    column-count: initial;
+}
+
+figure {
+    max-width: 100%;
+    min-height: 350px;
+    margin: 0;
+}
+
+figure img {
+    border-radius: 6px;
+}
+
+figcaption {
+    color: #424242;
+    margin: 5px 0;
+}
+
+.content {
+    border-radius: 6px;
+}
+
+.popup {
+    position: fixed;
+    visibility: hidden;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(33, 33, 33, 0.5);
+    z-index: -1;
+}
+
+.popup.open {
+    visibility: visible;
+}
+
+.action {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: transparent;
+    line-height: 0;
+    font-size: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.popup .content {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.popup .link {
+    display: inline;
+}

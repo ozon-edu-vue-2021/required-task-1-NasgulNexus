@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/loader.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Broken page</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <button class="action fetch" data-page="2">Загрузить картинки</button>
+        <section class="images content"></section>
+    </main>
+    <div class="popup">
+        <button class="action close">&Cross;</button>
+        <div class="content"></div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+
+    <template id="image">
+        <a class="link" href="" data-id="">
+            <img src="" widht="250" alt=""></img>
+        </a>
+    </template>
+
+    <template id="popup-image">
+        <div>
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+                    Автор: <address class="author"></address>
+                </figcaption>
+            </figure>
+            <a class="link open" href="" target="_blank">Открыть в полном размере</a>
+        </div>
+    </template>
+</body>
+
+</html>
