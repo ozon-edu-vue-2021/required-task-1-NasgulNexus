@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./styles/index.css">
     <title>Broken page</title>
 </head>
-
 <body>
+    <div class="popup">
+        <button class="actionClose">&Cross;</button>
+        <div class="content"></div>
+    </div>
     <main class="main">
         <div class="loader">
             <div></div>
@@ -21,22 +24,14 @@
             <div></div>
             <div></div>
         </div>
-        <button class="action fetch" data-page="2">Загрузить картинки</button>
+        <button class="actionFetch" data-page="2">Загрузить картинки</button>
         <section class="images content"></section>
-    </main>
-    <div class="popup">
-        <button class="action close">&Cross;</button>
-        <div class="content"></div>
-    </div>
-
-    <script src="./scripts/index.js"></script>
-
+    </main> 
     <template id="image">
         <a class="link" href="" data-id="">
             <img src="" widht="250" alt=""></img>
         </a>
     </template>
-
     <template id="popup-image">
         <div>
             <figure>
@@ -48,6 +43,6 @@
             <a class="link open" href="" target="_blank">Открыть в полном размере</a>
         </div>
     </template>
+    <script src="./scripts/index.js"></script>
 </body>
-
 </html>
