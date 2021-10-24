@@ -42,7 +42,7 @@ main {
   background-color: #fff;
   box-sizing: border-box;
   border-radius: 6px;
-  margin: 50px auto;
+  margin: 50px;
 }
 
 /* Action style */
@@ -92,14 +92,10 @@ a:nth-child(3n) {
   text-align: right;
   column-count: initial;
 }
-.popup {
-  overflow: scroll;
-}
 
 figure {
   max-width: 100%;
   min-height: 350px;
-
   margin: 0;
 }
 
@@ -125,7 +121,8 @@ figcaption {
   bottom: 0;
   right: 0;
   background-color: rgba(33, 33, 33, 0.5);
-  z-index: 10;
+  z-index: 1;
+  overflow: scroll;
 }
 
 .popup.open {
